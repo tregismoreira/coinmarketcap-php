@@ -32,7 +32,7 @@ class Base
      */
     public function getTickerByCoin($coinId, $params = array())
     {
-        return $this->buildRequest('ticker/' . $coin, $params);
+        return $this->buildRequest('ticker/' . $coinId, $params);
     }
 
     /**
@@ -76,7 +76,7 @@ class Base
 
     /**
      * @param $string
-     * @return mixed
+     * @return array
      */
     private function jsonDecode($string)
     {
